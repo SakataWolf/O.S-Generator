@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Seleção de Dados</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulário com Seleção de Dados</h1>
+
+        <form id="infoForm">
+            <label for="savedData">Selecione um registro:</label>
+            <select id="savedData" onchange="loadSelectedData()">
+                <option value="">Selecione...</option>
+            </select>
+
+            <label for="name">Nome:</label>
+            <input type="text" id="name" placeholder="Digite o nome...">
+
+            <label for="phone">Número de Telefone:</label>
+            <input type="tel" id="phone" placeholder="Digite o telefone...">
+
+            <label for="difficulty">Dificuldade Relatada:</label>
+            <textarea id="difficulty" placeholder="Descreva a dificuldade relatada..."></textarea>
+
+            <h2>-- TRATATIVA REALIZADA --</h2>
+            <label for="dropCount">Quantidade de quedas:</label>
+            <input type="number" id="dropCount" placeholder="Digite o número de quedas...">
+
+            <label for="onuSignal">Sinal da ONU em sistema:</label>
+            <input type="text" id="onuSignal" placeholder="Informe o sinal da ONU...">
+
+            <h2>-- INFORMAÇÕES DO EQUIPAMENTO --</h2>
+            <div class="checkbox-group">
+                <label><strong>Roteador:</strong></label>
+                <div>
+                    <label><input type="radio" name="router" value="Comodato"> Comodato</label>
+                    <label><input type="radio" name="router" value="Compra"> Compra</label>
+                </div>
+            </div>
+
+            <div class="checkbox-group">
+                <label><strong>ONU:</strong></label>
+                <div>
+                    <label><input type="radio" name="onu" value="Comodato"> Comodato</label>
+                    <label><input type="radio" name="onu" value="Compra"> Compra</label>
+                </div>
+            </div>
+
+            <label for="activationDate">Ativado em:</label>
+            <input type="date" id="activationDate">
+
+            <h2>-- Último Atendimento / Ordem de Serviço --</h2>
+            <label for="lastService">Baixa do último atendimento:</label>
+            <textarea id="lastService" placeholder="Descreva a baixa do último atendimento..."></textarea>
+
+            <button type="button" onclick="saveData()">Salvar Dados</button>
+            <button type="button" onclick="copyFormData()">Copiar Formulário</button>
+            <button type="button" class="delete-button" onclick="deleteSelectedData()">
+                <img src="https://img.icons8.com/material-outlined/24/ffffff/trash.png" alt="Lixeira"> Apagar Registro
+            </button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Desenvolvido com ❤️. <a href="#">Termos de uso</a></p>
+    </footer>
+    <script src="script.js"></script>
+
+    <script>
+        function loadSelectedData() {
+            // Função para carregar dados com base na seleção
+        }
+
+        function saveData() {
+            // Função para salvar os dados do formulário
+        }
+
+        function copyFormData() {
+            // Função para copiar os dados do formulário
+        }
+
+        function deleteSelectedData() {
+            // Função para excluir os dados selecionados
+        }
+    </script>
+</body>
+
+</html>
